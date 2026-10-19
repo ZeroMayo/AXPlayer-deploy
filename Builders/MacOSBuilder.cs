@@ -3,14 +3,14 @@
 
 using System;
 using System.IO;
-using NekoPlayer.Desktop.Deploy.Uploaders;
+using AXPlayer.Desktop.Deploy.Uploaders;
 
-namespace NekoPlayer.Desktop.Deploy.Builders
+namespace AXPlayer.Desktop.Deploy.Builders
 {
     public class MacOSBuilder : Builder
     {
-        private const string app_dir = "NekoPlayer.app";
-        private const string app_name = "NekoPlayer";
+        private const string app_dir = "AXPlayer.app";
+        private const string app_name = "AXPlayer";
         private const string os_name = "osx";
 
         private readonly string stagingTarget;

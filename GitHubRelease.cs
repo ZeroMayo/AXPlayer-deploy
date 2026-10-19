@@ -4,7 +4,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace NekoPlayer.Desktop.Deploy
+namespace AXPlayer.Desktop.Deploy
 {
     public class GitHubRelease
     {

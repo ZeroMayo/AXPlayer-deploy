@@ -19,13 +19,13 @@ jobs:
         run: dotnet tool install -g vpk
           
       - name: Fork App Repository
-        run: git clone https://github.com/BoomboxRapsody/NekoPlayer
+        run: git clone https://github.com/ZeroMayo/AX-Player
             
       - name: Pre-builder Setup 
-        run: dotnet build NekoPlayer-deploy.sln
+        run: dotnet build AXPlayer-deploy.sln
             
       - name: Build
-        run: ./bin/Debug/net8.0/NekoPlayer.Desktop.Deploy.exe
+        run: ./bin/Debug/net8.0/AXPlayer.Desktop.Deploy.exe
     
       - name: Upload
         uses: actions/upload-artifact@v4

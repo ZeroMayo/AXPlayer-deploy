@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NekoPlayer.Desktop.Deploy.Uploaders
+namespace AXPlayer.Desktop.Deploy.Uploaders
 {
     public class MacOSVelopackUploader : VelopackUploader
     {
@@ -32,7 +32,7 @@ namespace NekoPlayer.Desktop.Deploy.Uploaders
                     throw new Exception($"Unrecognised channel: {channel}");
             }
 
-            RenameAsset($"{Program.PackageName}-{channel}-Portable.zip", $"NekoPlayer.app.{suffix}.zip");
+            RenameAsset($"{Program.PackageName}-{channel}-Portable.zip", $"AXPlayer.app.{suffix}.zip");
         }
     }
 }

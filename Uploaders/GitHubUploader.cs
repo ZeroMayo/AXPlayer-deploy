@@ -8,7 +8,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using osu.Framework.IO.Network;
 
-namespace NekoPlayer.Desktop.Deploy.Uploaders
+namespace AXPlayer.Desktop.Deploy.Uploaders
 {
     public class GitHubUploader : Uploader
     {

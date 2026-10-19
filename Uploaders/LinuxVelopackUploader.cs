@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NekoPlayer.Desktop.Deploy.Uploaders
+namespace AXPlayer.Desktop.Deploy.Uploaders
 {
     public class LinuxVelopackUploader : VelopackUploader
     {
@@ -19,7 +19,7 @@ namespace NekoPlayer.Desktop.Deploy.Uploaders
         public override void PublishBuild(string version)
         {
             base.PublishBuild(version);
-            RenameAsset($"{Program.PackageName}-{channel}.AppImage", "NekoPlayer.AppImage");
+            RenameAsset($"{Program.PackageName}-{channel}.AppImage", "AXPlayer.AppImage");
         }
     }
 }

@@ -4,7 +4,7 @@
 using System;
 using System.Diagnostics;
 
-namespace NekoPlayer.Desktop.Deploy
+namespace AXPlayer.Desktop.Deploy
 {
     public static class Logger
     {

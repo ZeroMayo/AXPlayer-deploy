@@ -7,12 +7,12 @@ using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using NekoPlayer.Desktop.Deploy.Builders;
-using NekoPlayer.Desktop.Deploy.Uploaders;
+using AXPlayer.Desktop.Deploy.Builders;
+using AXPlayer.Desktop.Deploy.Uploaders;
 using osu.Framework;
 using osu.Framework.IO.Network;
 
-namespace NekoPlayer.Desktop.Deploy
+namespace AXPlayer.Desktop.Deploy
 {
     internal static class Program
     {
@@ -114,7 +114,7 @@ namespace NekoPlayer.Desktop.Deploy
             switch (targetPlatform)
             {
                 case RuntimeInfo.Platform.Windows:
-					ProjectName = "NekoPlayer.Desktop.Windows";
+					ProjectName = "AXPlayer.Desktop.Windows";
                     builder = new WindowsBuilder(version);
                     break;
 
@@ -179,9 +179,9 @@ namespace NekoPlayer.Desktop.Deploy
                 if (File.Exists(Path.Combine(path, $"{SolutionName}.sln")))
                     break;
 
-                if (Directory.Exists(Path.Combine(path, "NekoPlayer")) && File.Exists(Path.Combine(path, "NekoPlayer", $"{SolutionName}.sln")))
+                if (Directory.Exists(Path.Combine(path, "AXPlayer")) && File.Exists(Path.Combine(path, "AXPlayer", $"{SolutionName}.sln")))
                 {
-                    path = Path.Combine(path, "NekoPlayer");
+                    path = Path.Combine(path, "AXPlayer");
                     break;
                 }
 

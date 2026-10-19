@@ -2,12 +2,12 @@
 [Desktop Entry]
 Version=1.5
 Type=Application
-Name=NekoPlayer
+Name=AXPlayer
 Comment=A new era of YouTube Video Player with a focus on design and creativity.
 Icon=youtube-player-ex
 Exec=NekoPlayer %u
 Terminal=false
 Categories=AudioVideo;
-StartupWMClass=NekoPlayer
+StartupWMClass=AXPlayer
 SingleMainWindow=true
 StartupNotify=true

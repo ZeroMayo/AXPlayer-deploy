@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using osu.Framework.IO.Network;
 
-namespace NekoPlayer.Desktop.Deploy.Uploaders
+namespace AXPlayer.Desktop.Deploy.Uploaders
 {
     public class VelopackUploader : Uploader
     {
@@ -45,7 +45,7 @@ namespace NekoPlayer.Desktop.Deploy.Uploaders
         }
 
         // influences the name of the .app bundle. but needs to be osu!(lazer) for windows shortcuts
-        protected virtual string PackTitle => "NekoPlayer";
+        protected virtual string PackTitle => "AX Player";
 
         public override void PublishBuild(string version)
         {

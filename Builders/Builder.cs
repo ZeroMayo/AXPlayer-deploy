@@ -4,10 +4,10 @@
 using System;
 using System.IO;
 using System.IO.Compression;
-using NekoPlayer.Desktop.Deploy.Uploaders;
+using AXPlayer.Desktop.Deploy.Uploaders;
 using osu.Framework.IO.Network;
 
-namespace NekoPlayer.Desktop.Deploy.Builders
+namespace AXPlayer.Desktop.Deploy.Builders
 {
     public abstract class Builder
     {

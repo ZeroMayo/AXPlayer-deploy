@@ -4,13 +4,13 @@
 using System;
 using System.IO;
 using System.Linq;
-using NekoPlayer.Desktop.Deploy.Uploaders;
+using AXPlayer.Desktop.Deploy.Uploaders;
 
-namespace NekoPlayer.Desktop.Deploy.Builders
+namespace AXPlayer.Desktop.Deploy.Builders
 {
     public class WindowsBuilder : Builder
     {
-        private const string app_name = "NekoPlayer.exe";
+        private const string app_name = "AXPlayer.exe";
         private const string os_name = "win";
         private const string channel = "win";
 
@@ -60,7 +60,7 @@ namespace NekoPlayer.Desktop.Deploy.Builders
             AttachSatoriGC();
 
             bool rcEditCommand =
-                Program.RunCommand("tools/rcedit-x64.exe", $"\"{Path.Combine(Program.StagingPath, "NekoPlayer.exe")}\""
+                Program.RunCommand("tools/rcedit-x64.exe", $"\"{Path.Combine(Program.StagingPath, "AXPlayer.exe")}\""
                                                            + $" --set-icon \"{IconPath}\"",
                     exitOnFail: false);
 
@@ -70,12 +70,12 @@ namespace NekoPlayer.Desktop.Deploy.Builders
                 // TODO: Should probably change this to use RuntimeInfo.OS checks instead of fail values
                 bool wineRcEditCommand =
                     Program.RunCommand("wine", $"\"{Path.GetFullPath("tools/rcedit-x64.exe")}\""
-                                               + $" \"{Path.Combine(Program.StagingPath, "NekoPlayer.exe")}\""
+                                               + $" \"{Path.Combine(Program.StagingPath, "AXPlayer.exe")}\""
                                                + $" --set-icon \"{IconPath}\"",
                         exitOnFail: false);
 
                 if (!wineRcEditCommand)
-                    Logger.Error("Failed to set icon on NekoPlayer.exe");
+                    Logger.Error("Failed to set icon on AXPlayer.exe");
             }
         }
     }

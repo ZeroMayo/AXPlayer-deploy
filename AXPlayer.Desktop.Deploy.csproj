@@ -34,7 +34,7 @@
     <None Update="tools\rcedit-x64.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="NekoPlayer.AppDir-template.zip">
+    <None Update="AXPlayer.AppDir-template.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
