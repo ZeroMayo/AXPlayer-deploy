@@ -179,9 +179,9 @@ namespace AXPlayer.Desktop.Deploy
                 if (File.Exists(Path.Combine(path, $"{SolutionName}.sln")))
                     break;
 
-                if (Directory.Exists(Path.Combine(path, "AXPlayer")) && File.Exists(Path.Combine(path, "AXPlayer", $"{SolutionName}.sln")))
+                if (Directory.Exists(Path.Combine(path, "AX-Player")) && File.Exists(Path.Combine(path, "AX-Player", $"{SolutionName}.sln")))
                 {
-                    path = Path.Combine(path, "AXPlayer");
+                    path = Path.Combine(path, "AX-Player");
                     break;
                 }
 
