@@ -93,10 +93,13 @@ namespace AXPlayer.Desktop.Deploy
 
             string version = $"{verBase}{increment}";
 
+            if (args.Length > 0 && !string.IsNullOrEmpty(args[0]))
+                version = args[0];
+
             var targetPlatform = RuntimeInfo.OS;
 
-            if (args.Length > 0 && !string.IsNullOrEmpty(args[0]))
-                Enum.TryParse(args[0], true, out targetPlatform);
+            if (args.Length > 1 && !string.IsNullOrEmpty(args[1]))
+                Enum.TryParse(args[1], true, out targetPlatform);
 
             Console.ResetColor();
             Console.WriteLine($"Increment Version:     {IncrementVersion}");
