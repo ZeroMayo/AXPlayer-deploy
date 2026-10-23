@@ -16,7 +16,7 @@ namespace AXPlayer.Desktop.Deploy
             Console.WriteLine($"FATAL ERROR: {message}");
             Console.ResetColor();
 
-            Program.PauseIfInteractive();
+            Console.ReadLine();
             Environment.Exit(-1);
         }
 

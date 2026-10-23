@@ -108,7 +108,7 @@ namespace AXPlayer.Desktop.Deploy
             Console.WriteLine();
             Console.Write($"Ready to deploy version {version} on platform {targetPlatform}!");
 
-            PauseIfInteractive();
+            Console.ReadLine();
 
             RunCommand("dotnet", "tool restore", useSolutionPath: false);
 
@@ -148,7 +148,7 @@ namespace AXPlayer.Desktop.Deploy
                 openGitHubReleasePage();
 
             Logger.Write("Done!");
-            PauseIfInteractive();
+            Console.ReadLine();
         }
 
         private static void openGitHubReleasePage()
@@ -257,14 +257,6 @@ namespace AXPlayer.Desktop.Deploy
             Console.ForegroundColor = fg;
 
             return ret;
-        }
-
-        public static void PauseIfInteractive()
-        {
-            if (interactive)
-                Console.ReadLine();
-            else
-                Console.WriteLine();
         }
 
         public static string GetConfiguration(string key)
