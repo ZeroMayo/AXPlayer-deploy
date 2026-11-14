@@ -19,7 +19,7 @@ namespace AXPlayer.Desktop.Deploy.Builders
         {
         }
 
-        protected override string TargetFramework => "net10.0-windows10.0.19041.0";
+        protected override string TargetFramework => "net10.0-windows10.0.22000.194";
         protected override string RuntimeIdentifier => $"{os_name}-x64";
 
         public override Uploader CreateUploader()
