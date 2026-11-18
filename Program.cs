@@ -124,6 +124,10 @@ namespace AXPlayer.Desktop.Deploy
                 case RuntimeInfo.Platform.Linux:
                     builder = new LinuxBuilder(version);
                     break;
+					
+				case RuntimeInfo.Platform.Android:
+                    builder = new AndroidBuilder(version, getArg(2));
+                    break;
 
                 case RuntimeInfo.Platform.macOS:
                     builder = new MacOSBuilder(version, getArg(2));
