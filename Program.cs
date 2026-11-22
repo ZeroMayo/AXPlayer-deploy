@@ -126,6 +126,7 @@ namespace AXPlayer.Desktop.Deploy
                     break;
 					
 				case RuntimeInfo.Platform.Android:
+                    ProjectName = "AXPlayer.Android";
                     builder = new AndroidBuilder(version, getArg(2));
                     break;
 
