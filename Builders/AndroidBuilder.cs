@@ -39,7 +39,7 @@ namespace AXPlayer.Desktop.Deploy.Builders
             }
 
             string[] versionParts = Version.Split('-').First().Split('.');
-            string versionCode = versionParts[0].PadLeft(2, '0') + versionParts[1].PadLeft(2, '0') + versionParts[2].PadLeft(1, '0');
+            string versionCode = versionParts[0].PadLeft(2, '0') + versionParts[1].PadLeft(1, '0') + versionParts[2].PadLeft(1, '0');
 
             RunDotnetPublish($"-p:ApplicationVersion={versionCode} {codeSigningArguments}");
 
